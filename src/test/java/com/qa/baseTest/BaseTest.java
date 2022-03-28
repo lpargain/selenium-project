@@ -43,13 +43,13 @@ public class BaseTest {
     }
 
     public void setUpChrome() {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
 
     public void setUpFirefox() {
-        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "geckodriver");
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless");
         driver = new FirefoxDriver();
